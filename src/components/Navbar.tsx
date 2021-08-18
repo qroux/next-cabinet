@@ -19,6 +19,24 @@ export default function Navbar() {
     switchTheme,
   } = useContext(AppContext);
 
+  const buttons = [
+    { label: "Le cabinet", path: "/cabinet" },
+    { label: "Les soins", path: "/soins" },
+    { label: "Info Pratiques", path: "/info" },
+  ];
+
+  const renderButtons = () => {
+    return buttons.map((button) => {
+      return (
+        <Link href={button.path} passHref>
+          <Button>
+            <Typography variant="h6">{button.label}</Typography>
+          </Button>
+        </Link>
+      );
+    });
+  };
+
   return (
     <AppBar position="static" color="transparent" elevation={0}>
       <Toolbar variant="dense">
@@ -31,23 +49,7 @@ export default function Navbar() {
             />
           </Button>
         </Link>
-        <div>
-          <Link href="/cabinet" passHref>
-            <Button>
-              <Typography variant="h6">Le cabinet</Typography>
-            </Button>
-          </Link>
-          <Link href="/" passHref>
-            <Button>
-              <Typography variant="h6">Les soins</Typography>
-            </Button>
-          </Link>
-          <Link href="/" passHref>
-            <Button>
-              <Typography variant="h6">Info pratiques</Typography>
-            </Button>
-          </Link>
-        </div>
+        <div style={{ paddingLeft: "2rem" }}>{renderButtons()}</div>
         <FormControlLabel
           style={{ marginLeft: "auto" }}
           control={

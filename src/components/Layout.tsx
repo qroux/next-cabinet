@@ -1,10 +1,11 @@
-import { ReactNode, useContext, useEffect } from 'react';
-import Navbar from './Navbar';
-import { Context as AppContext } from '../globalState/context/AppContext';
-import { darkTheme } from '../../styles/theme/theme';
-import CssBaseline from '@material-ui/core/CssBaseline';
-import { ThemeProvider } from '@material-ui/core/styles';
-import Cookies from 'js-cookie';
+import { ReactNode, useContext, useEffect } from "react";
+import Navbar from "./Navbar";
+import { Context as AppContext } from "../globalState/context/AppContext";
+import { darkTheme } from "../../styles/theme/theme";
+import CssBaseline from "@material-ui/core/CssBaseline";
+import { ThemeProvider } from "@material-ui/core/styles";
+import Cookies from "js-cookie";
+import Footer from "./Footer";
 
 function Layout({ children }: { children: ReactNode }) {
   const {
@@ -15,8 +16,8 @@ function Layout({ children }: { children: ReactNode }) {
 
   useEffect(() => {
     const fetchCookie = () => {
-      const cookie = Cookies.get('DARK_MODE');
-      return !cookie || cookie === 'false' ? false : true;
+      const cookie = Cookies.get("DARK_MODE");
+      return !cookie || cookie === "false" ? false : true;
     };
 
     if (fetchCookie()) switchTheme(true);
@@ -27,11 +28,13 @@ function Layout({ children }: { children: ReactNode }) {
       <CssBaseline />
       <div
         style={{
-          minHeight: '100vh',
-          boxSizing: 'border-box',
-        }}>
+          minHeight: "80vh",
+          boxSizing: "border-box",
+        }}
+      >
         <Navbar />
         {children}
+        <Footer />
       </div>
     </ThemeProvider>
   );

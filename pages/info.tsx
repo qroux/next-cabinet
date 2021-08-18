@@ -2,12 +2,12 @@ import { Container, Typography, Divider } from "@material-ui/core";
 import React from "react";
 import AnimatedPage from "../src/components/AnimatedPage";
 
-const cabinet = () => {
+const info = () => {
   return (
     <AnimatedPage>
       <Container maxWidth="xl" style={{ paddingTop: "5rem" }}>
         <Typography variant="h3" align="justify">
-          Présentation du Cabinet
+          les infos
         </Typography>
         <Divider />
       </Container>
@@ -15,4 +15,4 @@ const cabinet = () => {
   );
 };
 
-export default cabinet;
+export default info;

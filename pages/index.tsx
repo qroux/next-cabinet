@@ -6,7 +6,7 @@ import AnimatedPage from "../src/components/AnimatedPage";
 import { Context as AuthContext } from "../src/globalState/context/AuthContext";
 import { Context as AppContext } from "../src/globalState/context/AppContext";
 import StateCheck from "../src/components/StateCheck";
-import { Button, Container, Typography } from "@material-ui/core";
+import { Button, Container, Typography, Divider } from "@material-ui/core";
 
 export default function Home() {
   const {
@@ -41,8 +41,16 @@ export default function Home() {
           <link rel="icon" href="/favicon.ico" />
         </Head>
 
-        <Container maxWidth="xl">
-          <div
+        <Container
+          maxWidth="xl"
+          style={{ border: "1px solid transparent", flex: 1 }}
+        >
+          <Typography variant="h2" align="center">
+            à remplacer
+          </Typography>
+
+          <Divider />
+          {/* <div
             style={{
               display: "flex",
               justifyContent: "space-between",
@@ -82,7 +90,7 @@ export default function Home() {
                 à remplacer
               </Button>
             </Link>
-          </div>
+          </div> */}
         </Container>
       </div>
     </AnimatedPage>
