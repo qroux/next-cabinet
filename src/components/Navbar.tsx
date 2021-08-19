@@ -49,7 +49,6 @@ export default function Navbar() {
   ];
 
   useEffect(() => {
-    console.log("dans useffect");
     fetchDarkMode();
   }, []);
 
