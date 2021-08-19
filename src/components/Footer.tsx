@@ -12,11 +12,11 @@ const Footer = () => {
   ];
 
   const renderItems = () => {
-    return items.map((item) => {
+    return items.map((item, id) => {
       return (
-        <div style={{ display: "flex", alignItems: "center" }}>
+        <div style={{ display: "flex", alignItems: "center" }} key={id}>
           {item.icon}
-          <Typography variant="h6" style={{ marginLeft: "2rem" }}>
+          <Typography variant="h6" style={{ marginLeft: "1rem" }}>
             {item.content}
           </Typography>
         </div>

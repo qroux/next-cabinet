@@ -1,12 +1,13 @@
-import createDataContext from './createDataContext';
-import { actionTypes } from '../actions/app/appTypes';
-import { switchTheme } from '../actions/app/appActions';
-import Cookies from 'js-cookie';
+import createDataContext from "./createDataContext";
+import { actionTypes } from "../actions/app/appTypes";
+import { switchTheme, fetchDarkMode } from "../actions/app/appActions";
+import Cookies from "js-cookie";
 
 const AppReducer = (state: any, action: any) => {
   switch (action.type) {
     case actionTypes.SWITCH_THEME:
-      return { ...state, darkMode: !state.darkMode };
+      console.log("dans reducer, action.payload=", action.payload);
+      return { ...state, darkMode: action.payload };
     default:
       return state;
   }
@@ -14,6 +15,6 @@ const AppReducer = (state: any, action: any) => {
 
 export const { Context, Provider } = createDataContext(
   AppReducer,
-  { switchTheme },
-  { lang: 'en', darkMode: false }
+  { switchTheme, fetchDarkMode },
+  { lang: "fr", darkMode: true }
 );

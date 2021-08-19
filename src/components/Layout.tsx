@@ -7,7 +7,7 @@ import { ThemeProvider } from "@material-ui/core/styles";
 import Cookies from "js-cookie";
 import Footer from "./Footer";
 
-function Layout({ children }: { children: ReactNode }) {
+const Layout = ({ children }: { children: ReactNode }) => {
   const {
     state: { darkMode },
     switchTheme,
@@ -38,6 +38,6 @@ function Layout({ children }: { children: ReactNode }) {
       </div>
     </ThemeProvider>
   );
-}
+};
 
 export default Layout;

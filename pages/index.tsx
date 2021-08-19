@@ -1,34 +1,14 @@
-import { useContext, useEffect } from "react";
 import Head from "next/head";
-import Link from "next/link";
-
 import AnimatedPage from "../src/components/AnimatedPage";
-import { Context as AuthContext } from "../src/globalState/context/AuthContext";
-import { Context as AppContext } from "../src/globalState/context/AppContext";
-import StateCheck from "../src/components/StateCheck";
-import { Button, Container, Typography, Divider } from "@material-ui/core";
+import { Container, Typography, Divider, Box } from "@material-ui/core";
 
 export default function Home() {
-  const {
-    state: { token },
-    fetchUserToken,
-  } = useContext(AuthContext);
-
-  const {
-    state: { darkMode },
-  } = useContext(AppContext);
-
-  useEffect(() => {
-    fetchUserToken();
-  }, []);
-
   return (
     <AnimatedPage>
       <div
         style={{
           display: "flex",
           justifyContent: "center",
-          alignItems: "center",
           minHeight: "80vh",
         }}
       >
@@ -40,57 +20,37 @@ export default function Home() {
           />
           <link rel="icon" href="/favicon.ico" />
         </Head>
-
         <Container
-          maxWidth="xl"
-          style={{ border: "1px solid transparent", flex: 1 }}
+          maxWidth={false}
+          style={{
+            backgroundImage: "url(/accueil.jpg)",
+            backgroundSize: "cover",
+            backgroundRepeat: "no-repeat",
+            backgroundPosition: "center",
+            height: "60vh",
+            display: "flex",
+            alignItems: "center",
+          }}
         >
-          <Typography variant="h2" align="center">
-            à remplacer
-          </Typography>
-
-          <Divider />
-          {/* <div
+          <Container
+            maxWidth="xl"
             style={{
+              border: "1px solid transparent",
+              flex: 1,
+              textAlign: "center",
               display: "flex",
-              justifyContent: "space-between",
-              alignItems: "center",
-              paddingTop: "2rem",
-              flexDirection: "column",
+              justifyContent: "center",
             }}
           >
-            <h1>
-              Welcome to{" "}
-              <a
-                style={{ color: "#0070f3", textDecoration: "none" }}
-                href="https://nextjs.org"
-              >
-                Next.js!
-              </a>
-            </h1>
-
-            <div
-              style={{
-                width: "15 rem",
-                overflow: "hidden",
-                marginBottom: "1rem",
-              }}
-            >
-              <StateCheck state={token} label={"Token: " + token} />
-              <StateCheck state={darkMode} label="Dark Mode" />
-            </div>
-            <Typography variant="h6">Transition test + Auth Flow</Typography>
-            <Link href="/login" passHref>
-              <Button
-                variant="contained"
-                color="secondary"
-                name="login"
-                style={{ width: "10rem" }}
-              >
-                à remplacer
-              </Button>
-            </Link>
-          </div> */}
+            <Box>
+              <Typography variant="h3">Docteur Gilbert Roux</Typography>
+              <Divider variant="fullWidth" style={{ marginBottom: "1rem" }} />
+              <Typography variant="h5">Chirurgien Dentiste</Typography>
+              <Typography variant="h5">
+                Spécialisé en Implantologie et Parodontologie
+              </Typography>
+            </Box>
+          </Container>
         </Container>
       </div>
     </AnimatedPage>

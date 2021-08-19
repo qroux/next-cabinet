@@ -1,19 +1,19 @@
-import { createMuiTheme, ThemeOptions } from '@material-ui/core/styles';
+import { createMuiTheme, ThemeOptions } from "@material-ui/core/styles";
 
 export const paletteColorsDark = {
-  primary: '#003952',
-  secondary: '#01638D',
-  error: '#FB9F89',
-  background: '#1b262c',
-  text: '#EADEDA',
+  primary: "#003952",
+  secondary: "#01638D",
+  error: "#FB9F89",
+  background: "#1b262c",
+  text: "#F8F3F2",
 };
 
 export const paletteColorsLight = {
-  primary: '#6886c5',
-  secondary: '#ffbf99',
-  error: '#E44C65',
-  background: '#f9f9f9',
-  text: '#050505',
+  primary: "#6886c5",
+  secondary: "#ffbf99",
+  error: "#E44C65",
+  background: "#f9f9f9",
+  text: "#050505",
 };
 
 export const darkTheme = (dark: boolean): ThemeOptions => {
@@ -21,7 +21,7 @@ export const darkTheme = (dark: boolean): ThemeOptions => {
 
   return createMuiTheme({
     palette: {
-      type: dark ? 'dark' : 'light',
+      type: dark ? "dark" : "light",
       primary: {
         main: paletteColors.primary,
       },
@@ -40,9 +40,9 @@ export const darkTheme = (dark: boolean): ThemeOptions => {
     },
     overrides: {
       MuiCssBaseline: {
-        '@global': {
+        "@global": {
           body: {
-            transition: 'all 0.3s linear',
+            transition: "all 0.3s linear",
           },
         },
       },
