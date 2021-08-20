@@ -7,7 +7,7 @@ export const paletteColorsDark = {
   background: "#1b262c",
   textPrimary: "#F8F3F2",
   textSecondary: "#9e115c",
-  paper: "#f5f5f5",
+  // paper: "#f5f5f5",
 };
 
 export const paletteColorsLight = {
@@ -17,7 +17,7 @@ export const paletteColorsLight = {
   background: "#ededed",
   textPrimary: "#474747",
   textSecondary: "#F8F3F2",
-  paper: "#e6e6e6",
+  // paper: "#e6e6e6",
 };
 
 export const darkTheme = (dark: boolean): ThemeOptions => {
@@ -41,7 +41,7 @@ export const darkTheme = (dark: boolean): ThemeOptions => {
       },
       background: {
         default: paletteColors.background,
-        paper: paletteColors.paper,
+        // paper: paletteColors.paper,
       },
       text: {
         primary: paletteColors.textPrimary,
