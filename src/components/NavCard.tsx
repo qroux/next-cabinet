@@ -10,7 +10,15 @@ import Link from "next/link";
 
 import React from "react";
 
-const NavCard = ({ imagePath, label, path }) => {
+const NavCard = ({
+  imagePath,
+  label,
+  path,
+}: {
+  imagePath: string;
+  label: string;
+  path: string;
+}) => {
   return (
     <Link href={path}>
       <Card
