@@ -65,7 +65,9 @@ export default function Navbar() {
       return (
         <Link href={button.path} passHref key={id}>
           <Button>
-            <Typography variant="h6">{button.label}</Typography>
+            <Typography variant="h6" color="textPrimary">
+              {button.label}
+            </Typography>
           </Button>
         </Link>
       );
@@ -83,7 +85,7 @@ export default function Navbar() {
   };
 
   return (
-    <AppBar position="static" color="transparent" elevation={5}>
+    <AppBar position="static" color="transparent" elevation={0}>
       <Toolbar variant="regular">
         <Link href="/" passHref>
           <Button color="inherit">

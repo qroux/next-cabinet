@@ -26,7 +26,7 @@ const Footer = () => {
 
   return (
     <Paper
-      elevation={3}
+      elevation={5}
       style={{
         padding: "5rem 0",
         backgroundColor: "transparent",

@@ -11,9 +11,13 @@ export default class MyDocument extends Document {
         <Head>
           <meta name="theme-color" content={theme.palette.primary.main} />
           <link rel="shortcut icon" href="/android-chrome-512x512.png" />
-          <link
+          {/* <link
             rel="stylesheet"
             href="https://fonts.googleapis.com/css?family=Roboto+Slab:300,400,500,700&display=swap"
+          /> */}
+          <link
+            href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap"
+            rel="stylesheet"
           />
         </Head>
         <body>

@@ -5,23 +5,31 @@ export const paletteColorsDark = {
   secondary: "#01638D",
   error: "#FB9F89",
   background: "#1b262c",
-  text: "#F8F3F2",
+  textPrimary: "#F8F3F2",
+  textSecondary: "#9e115c",
+  paper: "#f5f5f5",
 };
 
 export const paletteColorsLight = {
   primary: "#6886c5",
   secondary: "#ffbf99",
   error: "#E44C65",
-  background: "#f9f9f9",
-  text: "#050505",
+  background: "#ededed",
+  textPrimary: "#474747",
+  textSecondary: "#F8F3F2",
+  paper: "#e6e6e6",
 };
 
 export const darkTheme = (dark: boolean): ThemeOptions => {
   const paletteColors = dark ? paletteColorsDark : paletteColorsLight;
 
   return createMuiTheme({
+    typography: {
+      fontFamily: ["Montserrat"].join(","),
+    },
     palette: {
       type: dark ? "dark" : "light",
+
       primary: {
         main: paletteColors.primary,
       },
@@ -33,9 +41,11 @@ export const darkTheme = (dark: boolean): ThemeOptions => {
       },
       background: {
         default: paletteColors.background,
+        paper: paletteColors.paper,
       },
       text: {
-        primary: paletteColors.text,
+        primary: paletteColors.textPrimary,
+        secondary: paletteColors.textSecondary,
       },
     },
     overrides: {
