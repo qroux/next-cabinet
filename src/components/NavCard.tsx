@@ -23,8 +23,9 @@ const NavCard = ({
     <Link href={path}>
       <Card
         style={{
-          width: "20rem",
+          width: "18rem",
           backgroundColor: "white",
+          margin: "0.5rem 0",
         }}
         elevation={3}
       >

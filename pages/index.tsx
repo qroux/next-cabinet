@@ -11,9 +11,23 @@ import {
   CardContent,
   CardActions,
   Button,
+  makeStyles,
 } from "@material-ui/core";
 import React from "react";
 import NavCard from "../src/components/NavCard";
+
+const useStyles = makeStyles((theme) => ({
+  navContainer: {
+    [theme.breakpoints.up("md")]: {
+      flexDirection: "row",
+    },
+    [theme.breakpoints.down("sm")]: {
+      flexDirection: "column",
+      justifyContent: "space-around",
+      alignItems: "center",
+    },
+  },
+}));
 
 export default function Home() {
   const cards = [
@@ -29,6 +43,8 @@ export default function Home() {
       path: "/cabinet",
     },
   ];
+
+  const classes = useStyles();
 
   const renderNavCards = () => {
     return cards.map((card, id) => {
@@ -69,7 +85,7 @@ export default function Home() {
             backgroundImage: "url(/accueil.jpg)",
             backgroundSize: "cover",
             backgroundRepeat: "no-repeat",
-            // backgroundPosition: "center",
+            backgroundPosition: "50% 10%",
             height: "50vh",
             display: "flex",
             alignItems: "center",
@@ -103,12 +119,13 @@ export default function Home() {
 
         {/* Navigation cards */}
         <Container
+          className={classes.navContainer}
           maxWidth={"lg"}
           style={{
-            paddingTop: "3rem",
             display: "flex",
             width: "100%",
             justifyContent: "space-around",
+            padding: "0.5rem 0",
           }}
         >
           {renderNavCards()}
