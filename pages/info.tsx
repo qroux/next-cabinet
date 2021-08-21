@@ -5,8 +5,8 @@ import AnimatedPage from "../src/components/AnimatedPage";
 const info = () => {
   return (
     <AnimatedPage>
-      <Container maxWidth="xl" style={{ paddingTop: "5rem" }}>
-        <Typography variant="h3" align="justify">
+      <Container maxWidth="xl" style={{ paddingTop: "2rem" }}>
+        <Typography variant="h4" align="left">
           les infos
         </Typography>
         <Divider />
