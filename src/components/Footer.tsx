@@ -16,7 +16,7 @@ const Footer = () => {
       return (
         <div style={{ display: "flex", alignItems: "center" }} key={id}>
           {item.icon}
-          <Typography variant="h6" style={{ marginLeft: "1rem" }}>
+          <Typography variant="body1" style={{ marginLeft: "1rem" }}>
             {item.content}
           </Typography>
         </div>
@@ -26,7 +26,7 @@ const Footer = () => {
 
   return (
     <Paper
-      elevation={5}
+      elevation={0}
       style={{
         padding: "5rem 0",
         backgroundColor: "transparent",

@@ -53,8 +53,7 @@ const NavCard = ({
           >
             <Typography
               gutterBottom
-              variant="h5"
-              component="h2"
+              variant="h6"
               align="center"
               style={{ color: "#474747" }}
             >

@@ -61,6 +61,8 @@ export default function Home() {
           />
           <link rel="icon" href="/favicon.ico" />
         </Head>
+
+        {/* Banner */}
         <Container
           maxWidth={false}
           style={{
@@ -73,6 +75,7 @@ export default function Home() {
             alignItems: "center",
           }}
         >
+          {/* Banner Content */}
           <Container
             maxWidth="xl"
             style={{
@@ -84,19 +87,21 @@ export default function Home() {
             }}
           >
             <Box>
-              <Typography variant="h3" style={{ color: "white" }}>
+              <Typography variant="h4" style={{ color: "white" }}>
                 Docteur Gilbert Roux
               </Typography>
               <Divider variant="fullWidth" style={{ marginBottom: "1rem" }} />
-              <Typography variant="h4" style={{ color: "white" }}>
+              <Typography variant="h6" style={{ color: "white" }}>
                 Chirurgien Dentiste
               </Typography>
-              <Typography variant="h4" style={{ color: "white" }}>
+              <Typography variant="h6" style={{ color: "white" }}>
                 Spécialisé en Implantologie et Parodontologie
               </Typography>
             </Box>
           </Container>
         </Container>
+
+        {/* Navigation cards */}
         <Container
           maxWidth={"lg"}
           style={{
