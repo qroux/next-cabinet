@@ -82,9 +82,11 @@ export default function Home() {
         <Container
           maxWidth={false}
           style={{
-            backgroundImage: "url(/accueil.jpg)",
+            backgroundImage:
+              "linear-gradient(rgba(0,0,0,0.1),rgba(0,0,0,0.1)), url(/accueil.jpg)",
             backgroundSize: "cover",
             backgroundRepeat: "no-repeat",
+
             backgroundPosition: "50% 10%",
             height: "50vh",
             display: "flex",
