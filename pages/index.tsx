@@ -83,7 +83,7 @@ export default function Home() {
           maxWidth={false}
           style={{
             backgroundImage:
-              "linear-gradient(rgba(0,0,0,0.1),rgba(0,0,0,0.1)), url(/accueil.jpg)",
+              "linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2)), url(/accueil.jpg)",
             backgroundSize: "cover",
             backgroundRepeat: "no-repeat",
 
