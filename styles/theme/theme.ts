@@ -1,5 +1,10 @@
 import { createMuiTheme, ThemeOptions } from "@material-ui/core/styles";
 
+export const paletteColorsNeutral = {
+  dark: "#474747",
+  light: "#F8F3F2",
+};
+
 export const paletteColorsDark = {
   primary: "#003952",
   secondary: "#01638D",
@@ -46,8 +51,11 @@ export const darkTheme = (dark: boolean): ThemeOptions => {
       text: {
         primary: paletteColors.textPrimary,
         secondary: paletteColors.textSecondary,
+        dark: paletteColorsNeutral.dark,
+        light: paletteColorsNeutral.light,
       },
     },
+    spacing: {},
     overrides: {
       MuiCssBaseline: {
         "@global": {
