@@ -5,7 +5,7 @@ import Carousel from "react-material-ui-carousel";
 import { Paper, Button } from "@material-ui/core";
 import { useTheme } from "@material-ui/core/styles";
 
-const cabinet = () => {
+const Cabinet = () => {
   const theme = useTheme();
   const pictures = [
     { label: "Poste de Chirurgie", path: "/fauteuil2-1.jpg" },
@@ -60,4 +60,4 @@ const cabinet = () => {
   );
 };
 
-export default cabinet;
+export default Cabinet;
