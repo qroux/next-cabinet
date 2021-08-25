@@ -32,6 +32,7 @@ const cabinet = () => {
           <Typography
             variant="h5"
             style={{
+              // @ts-ignore
               color: theme.palette.text.light,
               backgroundColor: "rgba(0,0,0,0.5)",
               width: "100%",

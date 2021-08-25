@@ -51,11 +51,11 @@ export const darkTheme = (dark: boolean): ThemeOptions => {
       text: {
         primary: paletteColors.textPrimary,
         secondary: paletteColors.textSecondary,
+        // @ts-ignore
         dark: paletteColorsNeutral.dark,
         light: paletteColorsNeutral.light,
       },
     },
-    spacing: {},
     overrides: {
       MuiCssBaseline: {
         "@global": {
