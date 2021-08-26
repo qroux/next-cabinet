@@ -1,12 +1,27 @@
-import { Container, Typography, Divider } from "@material-ui/core";
+import { Container, Typography, Divider, makeStyles } from "@material-ui/core";
 import React from "react";
 import AnimatedPage from "../src/components/AnimatedPage";
 import Carousel from "react-material-ui-carousel";
 import { Paper, Button } from "@material-ui/core";
 import { useTheme } from "@material-ui/core/styles";
 
+const useStyles = makeStyles((theme) => ({
+  paperContainer: {
+    [theme.breakpoints.up("md")]: {
+      border: "1px solid red",
+      height: "80vh",
+    },
+    [theme.breakpoints.down("sm")]: {
+      border: "1px solid green",
+      height: "40vh",
+    },
+  },
+}));
+
 const Cabinet = () => {
+  const classes = useStyles();
   const theme = useTheme();
+
   const pictures = [
     { label: "Poste de Chirurgie", path: "/fauteuil2-1.jpg" },
     { label: "Poste de Chirurgie", path: "/b2r.jpg" },
@@ -18,9 +33,9 @@ const Cabinet = () => {
     return pictures.map((picture, id) => {
       return (
         <Paper
+          className={classes.paperContainer}
           style={{
             backgroundImage: `url(${picture.path})`,
-            height: "60vh",
             backgroundSize: "cover",
             backgroundPosition: "center",
             display: "flex",
