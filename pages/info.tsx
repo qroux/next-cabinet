@@ -6,7 +6,7 @@ const info = () => {
   return (
     <AnimatedPage>
       <Container maxWidth="xl" style={{ paddingTop: "2rem" }}>
-        <Typography variant="h4" align="left">
+        <Typography variant="h5" align="left">
           les infos
         </Typography>
         <Divider />
