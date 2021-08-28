@@ -34,7 +34,7 @@ const Info = () => {
   const renderOpennings = () => {
     return opennings.map((openning, id) => {
       return (
-        <div style={{ marginBottom: "2rem" }} key={id}>
+        <div style={{ marginBottom: "1rem" }} key={id}>
           <Typography variant="h6" align="center">
             {openning.day}
           </Typography>
