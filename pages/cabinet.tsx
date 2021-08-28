@@ -71,7 +71,7 @@ const Cabinet = () => {
 
   return (
     <AnimatedPage>
-      <Container maxWidth="xl" style={{ paddingTop: "2rem" }}>
+      <Container maxWidth="xl" style={{ paddingTop: "1rem" }}>
         <Typography variant="h5" align="left">
           Le cabinet
         </Typography>

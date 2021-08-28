@@ -48,7 +48,11 @@ const Info = () => {
 
   return (
     <AnimatedPage>
-      <Container maxWidth="xl" style={{ paddingTop: "2rem" }}>
+      <Container
+        maxWidth="xl"
+        style={{ paddingTop: "1rem" }}
+        disableGutters={false}
+      >
         <Typography variant="h5" align="left">
           Informations pratiques
         </Typography>

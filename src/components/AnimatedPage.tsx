@@ -12,7 +12,7 @@ export default function AnimatedPage({ children }: { children: any }) {
     >
       <Container
         maxWidth={false}
-        disableGutters={false}
+        disableGutters={true}
         style={{ minHeight: "80vh" }}
       >
         {children}
