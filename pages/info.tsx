@@ -21,7 +21,7 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-const info = () => {
+const Info = () => {
   const classes = useStyles();
   const opennings = [
     { day: "Lundi", morning: "9h00-12h00", evening: "14h00-19h00" },
@@ -108,4 +108,4 @@ const info = () => {
   );
 };
 
-export default info;
+export default Info;
