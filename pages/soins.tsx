@@ -7,7 +7,7 @@ const soins = () => {
     <AnimatedPage>
       <Container maxWidth="xl" style={{ paddingTop: "2rem" }}>
         <Typography variant="h5" align="left">
-          les soins
+          Les soins
         </Typography>
         <Divider />
       </Container>

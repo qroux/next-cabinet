@@ -73,7 +73,7 @@ const Cabinet = () => {
     <AnimatedPage>
       <Container maxWidth="xl" style={{ paddingTop: "2rem" }}>
         <Typography variant="h5" align="left">
-          Le Cabinet
+          Le cabinet
         </Typography>
         <Divider style={{ marginBottom: "2rem" }} />
         <Carousel>{renderSlides()}</Carousel>
