@@ -7,12 +7,19 @@ import { useTheme } from "@material-ui/core/styles";
 
 const useStyles = makeStyles((theme) => ({
   paperContainer: {
-    [theme.breakpoints.up("md")]: {
-      border: "1px solid red",
-      height: "80vh",
+    [theme.breakpoints.only("xl")]: {
+      height: "70vh",
     },
-    [theme.breakpoints.down("sm")]: {
-      border: "1px solid green",
+    [theme.breakpoints.only("lg")]: {
+      height: "70vh",
+    },
+    [theme.breakpoints.only("md")]: {
+      height: "65vh",
+    },
+    [theme.breakpoints.only("sm")]: {
+      height: "60vh",
+    },
+    [theme.breakpoints.down("xs")]: {
       height: "40vh",
     },
   },
@@ -45,7 +52,7 @@ const Cabinet = () => {
           key={id}
         >
           <Typography
-            variant="h5"
+            variant="h6"
             style={{
               // @ts-ignore
               color: theme.palette.text.light,
@@ -66,7 +73,7 @@ const Cabinet = () => {
     <AnimatedPage>
       <Container maxWidth="xl" style={{ paddingTop: "2rem" }}>
         <Typography variant="h4" align="left">
-          Présentation du Cabinet
+          Le Cabinet
         </Typography>
         <Divider style={{ marginBottom: "2rem" }} />
         <Carousel>{renderSlides()}</Carousel>
