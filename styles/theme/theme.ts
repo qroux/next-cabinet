@@ -7,7 +7,8 @@ export const paletteColorsNeutral = {
 
 export const paletteColorsDark = {
   primary: "#003952",
-  secondary: "#01638D",
+  secondary: "#18a18a",
+  // secondary: "#01638D",
   error: "#FB9F89",
   background: "#1b262c",
   textPrimary: "#F8F3F2",
@@ -17,7 +18,8 @@ export const paletteColorsDark = {
 
 export const paletteColorsLight = {
   primary: "#6886c5",
-  secondary: "#ffbf99",
+  secondary: "#18a18a",
+  // secondary: "#ffbf99",
   error: "#E44C65",
   background: "#ededed",
   textPrimary: "#474747",

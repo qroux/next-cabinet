@@ -4,6 +4,7 @@ import AnimatedPage from "../src/components/AnimatedPage";
 import Carousel from "react-material-ui-carousel";
 import { Paper, Button } from "@material-ui/core";
 import { useTheme } from "@material-ui/core/styles";
+import Title from "../src/components/page/Title";
 
 const useStyles = makeStyles((theme) => ({
   paperContainer: {
@@ -40,6 +41,7 @@ const Cabinet = () => {
     return pictures.map((picture, id) => {
       return (
         <Paper
+          square={true}
           className={classes.paperContainer}
           style={{
             backgroundImage: `url(${picture.path})`,
@@ -72,11 +74,9 @@ const Cabinet = () => {
   return (
     <AnimatedPage>
       <Container maxWidth="xl" style={{ paddingTop: "1rem" }}>
-        <Typography variant="h5" align="left">
-          Le cabinet
-        </Typography>
-        <Divider style={{ marginBottom: "2rem" }} />
-        <Carousel>{renderSlides()}</Carousel>
+        <Title label="Le cabinet" />
+
+        <Carousel animation="fade">{renderSlides()}</Carousel>
       </Container>
     </AnimatedPage>
   );

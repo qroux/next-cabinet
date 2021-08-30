@@ -7,11 +7,12 @@ import {
 } from "@material-ui/core";
 import React from "react";
 import AnimatedPage from "../src/components/AnimatedPage";
+import Title from "../src/components/page/Title";
 
 const useStyles = makeStyles((theme) => ({
   fullContainer: {
     [theme.breakpoints.up("lg")]: {
-      flexDirection: "row",
+      flexDirection: "column",
     },
     [theme.breakpoints.down("sm")]: {
       flexDirection: "column",
@@ -53,10 +54,8 @@ const Info = () => {
         style={{ paddingTop: "1rem" }}
         disableGutters={false}
       >
-        <Typography variant="h5" align="left">
-          Informations pratiques
-        </Typography>
-        <Divider />
+        <Title label="Informations pratiques" />
+
         <Box
           style={{
             display: "flex",
@@ -68,6 +67,51 @@ const Info = () => {
             className={classes.fullContainer}
             style={{ display: "flex", flex: 1 }}
           >
+            {/* Info */}
+            <div
+              className="InfoContainer"
+              style={{
+                flex: 1,
+                paddingTop: "0.5rem",
+                display: "flex",
+                justifyContent: "space-around",
+              }}
+            >
+              {/* Info */}
+              <div style={{ flex: 0.5 }}>
+                <Typography
+                  variant="h5"
+                  align="center"
+                  style={{ marginBottom: "2rem" }}
+                >
+                  Consultations
+                </Typography>
+
+                {renderOpennings()}
+
+                <Typography
+                  variant="h6"
+                  align="center"
+                  style={{ marginTop: "4rem" }}
+                >
+                  Nos consultations sont exclusivement sur rendez-vous
+                </Typography>
+              </div>
+
+              <Divider orientation="vertical" flexItem />
+
+              {/* Horaires */}
+              <div style={{ flex: 1 }}>
+                <Typography
+                  variant="h6"
+                  align="center"
+                  style={{ marginTop: "4rem" }}
+                >
+                  -
+                </Typography>
+              </div>
+            </div>
+
             {/* MAP */}
             <div
               className="mapContainer"
@@ -82,30 +126,6 @@ const Info = () => {
                 marginHeight={0}
                 marginWidth={0}
               ></iframe>
-            </div>
-
-            {/* Info */}
-            <div
-              className="InfoContainer"
-              style={{ flex: 1, paddingTop: "2rem" }}
-            >
-              <Typography
-                variant="h5"
-                align="center"
-                style={{ marginBottom: "2rem" }}
-              >
-                Consultations
-              </Typography>
-
-              {renderOpennings()}
-
-              <Typography
-                variant="h6"
-                align="center"
-                style={{ marginTop: "4rem" }}
-              >
-                Nos consultations sont exclusivement sur rendez-vous
-              </Typography>
             </div>
           </div>
         </Box>
