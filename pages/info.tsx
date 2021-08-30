@@ -59,7 +59,6 @@ const Info = () => {
         <Divider />
         <Box
           style={{
-            minHeight: "40vh",
             display: "flex",
             justifyContent: "center",
             alignItems: "center",
@@ -69,6 +68,7 @@ const Info = () => {
             className={classes.fullContainer}
             style={{ display: "flex", flex: 1 }}
           >
+            {/* MAP */}
             <div
               className="mapContainer"
               style={{ flex: 1, paddingTop: "2rem" }}
@@ -83,6 +83,8 @@ const Info = () => {
                 marginWidth={0}
               ></iframe>
             </div>
+
+            {/* Info */}
             <div
               className="InfoContainer"
               style={{ flex: 1, paddingTop: "2rem" }}
