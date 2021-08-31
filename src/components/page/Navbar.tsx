@@ -15,7 +15,7 @@ import {
   makeStyles,
 } from "@material-ui/core";
 import React, { useContext, useState, useEffect } from "react";
-import { Context as AppContext } from "../globalState/context/AppContext";
+import { Context as AppContext } from "../../globalState/context/AppContext";
 import DarkIcon from "@material-ui/icons/Brightness4Outlined";
 import MenuIcon from "@material-ui/icons/Menu";
 

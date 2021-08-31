@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { Animations } from "../../styles/animations";
+import { Animations } from "../../../styles/animations";
 import { Container } from "@material-ui/core";
 
 export default function AnimatedPage({ children }: { children: any }) {

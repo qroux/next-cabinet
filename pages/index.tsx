@@ -1,5 +1,5 @@
 import Head from "next/head";
-import AnimatedPage from "../src/components/AnimatedPage";
+import AnimatedPage from "../src/components/page/AnimatedPage";
 import {
   Container,
   Typography,
@@ -14,7 +14,7 @@ import {
   makeStyles,
 } from "@material-ui/core";
 import React from "react";
-import NavCard from "../src/components/NavCard";
+import NavCard from "../src/components/page/NavCard";
 
 const useStyles = makeStyles((theme) => ({
   navContainer: {

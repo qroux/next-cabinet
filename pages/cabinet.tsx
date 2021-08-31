@@ -1,6 +1,6 @@
 import { Container, Typography, Divider, makeStyles } from "@material-ui/core";
 import React from "react";
-import AnimatedPage from "../src/components/AnimatedPage";
+import AnimatedPage from "../src/components/page/AnimatedPage";
 import Carousel from "react-material-ui-carousel";
 import { Paper, Button } from "@material-ui/core";
 import { useTheme } from "@material-ui/core/styles";

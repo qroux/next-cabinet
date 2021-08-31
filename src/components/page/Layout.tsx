@@ -1,7 +1,7 @@
 import { ReactNode, useContext, useEffect } from "react";
 import Navbar from "./Navbar";
-import { Context as AppContext } from "../globalState/context/AppContext";
-import { darkTheme } from "../../styles/theme/theme";
+import { Context as AppContext } from "../../globalState/context/AppContext";
+import { darkTheme } from "../../../styles/theme/theme";
 import CssBaseline from "@material-ui/core/CssBaseline";
 import { ThemeProvider } from "@material-ui/core/styles";
 import Cookies from "js-cookie";

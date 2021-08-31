@@ -6,7 +6,7 @@ import {
   Box,
 } from "@material-ui/core";
 import React from "react";
-import AnimatedPage from "../src/components/AnimatedPage";
+import AnimatedPage from "../src/components/page/AnimatedPage";
 import Title from "../src/components/page/Title";
 
 const useStyles = makeStyles((theme) => ({
