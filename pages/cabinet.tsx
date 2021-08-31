@@ -61,7 +61,7 @@ const Cabinet = () => {
               backgroundColor: "rgba(0,0,0,0.5)",
               width: "100%",
               textAlign: "center",
-              padding: "1rem 0",
+              padding: "0.5rem 0",
             }}
           >
             {picture.label}
@@ -75,7 +75,6 @@ const Cabinet = () => {
     <AnimatedPage>
       <Container maxWidth="xl" style={{ paddingTop: "1rem" }}>
         <Title label="Le cabinet" />
-
         <Carousel animation="fade">{renderSlides()}</Carousel>
       </Container>
     </AnimatedPage>
