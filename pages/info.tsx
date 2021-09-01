@@ -72,7 +72,7 @@ const Info = () => {
               className="InfoContainer"
               style={{
                 flex: 1,
-                paddingTop: "0.5rem",
+                padding: "1rem 0",
                 display: "flex",
                 justifyContent: "space-around",
               }}

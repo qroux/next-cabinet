@@ -14,6 +14,7 @@ const Title = ({ label }: { label: string }) => {
         // @ts-ignore
         color: theme.palette.text.light,
         marginBottom: "0.5rem",
+        borderRadius: "3px",
       }}
     >
       {label}

@@ -28,6 +28,7 @@ const NavCard = ({
           margin: "0.5rem 0",
         }}
         elevation={3}
+        square={false}
       >
         <CardActionArea
           style={{
