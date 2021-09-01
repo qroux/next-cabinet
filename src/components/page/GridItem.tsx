@@ -43,7 +43,7 @@ const GridItem = ({
               title={imagePath}
               style={{
                 height: "15em",
-                width: "30rem",
+                width: "100%",
               }}
             />
             <CardContent
