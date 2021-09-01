@@ -32,7 +32,10 @@ const PageHeader = ({ title, crumbs }: { title: string; crumbs: Crumb[] }) => {
       <Breadcrumbs style={{ marginTop: "1.5rem" }}>
         {renderCrumbs()}
       </Breadcrumbs>
-      <Typography variant="h5" style={{ marginTop: "1rem" }}>
+      <Typography
+        variant="h5"
+        style={{ marginTop: "1rem", fontWeight: "bold" }}
+      >
         {title}
       </Typography>
       <Divider style={{ marginBottom: "2rem" }} />
