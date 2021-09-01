@@ -24,7 +24,7 @@ const soins = () => {
   const questions = [
     {
       label: "J'ai peur d'aller chez le dentiste, comment me faire soigner ?",
-      path: "/",
+      path: "/dentophobie",
     },
   ];
 

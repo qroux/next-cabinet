@@ -12,7 +12,7 @@ export const paletteColorsDark = {
   error: "#FB9F89",
   background: "#1b262c",
   textPrimary: "#F8F3F2",
-  textSecondary: "#9e115c",
+  textSecondary: "#18a18a",
   // paper: "#f5f5f5",
 };
 
@@ -23,7 +23,7 @@ export const paletteColorsLight = {
   error: "#E44C65",
   background: "#ededed",
   textPrimary: "#474747",
-  textSecondary: "#F8F3F2",
+  textSecondary: "#18a18a",
   // paper: "#e6e6e6",
 };
 
