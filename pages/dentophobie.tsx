@@ -68,7 +68,7 @@ const Dentophobie = () => {
             <strong>
               Un vécu traumatisant au cours de l’enfance, lors de mauvaises
               expériences, est souvent à l’origine de cette phobie.
-            </strong>{" "}
+            </strong>
             Elle se manifeste sur le fauteuil dentaire par des accélérations du
             coeur, de la transpiration mais cet état est souvent précédé
             d’insomnies la veille même du rendez vous.
@@ -82,7 +82,7 @@ const Dentophobie = () => {
             souvent pas du tout pris au sérieux face à “sa peur à lui”. Ce
             conflit non résolu et cette impasse dans le refus des soins, sont
             extrêment dommageables, aussi bien pour l'état dentaire que l’état
-            général et psychique.{" "}
+            général et psychique.
             <strong>
               L’aide professionnelle prévenante et structurée peut organiser
               efficacement la sortie de cette impasse.
@@ -94,7 +94,7 @@ const Dentophobie = () => {
               Notre objectif central est d’enlever la peur du dentiste palier
               par palier pour permettre aux patients phobiques de reprendre
               contrôle et reprendre leur souffle.
-            </strong>{" "}
+            </strong>
             Construire un rapport de confiance clair est fondamental.
           </Typography>
           <Typography variant="body1">
