@@ -4,6 +4,7 @@ import {
   Typography,
   Link as MuiLink,
 } from "@material-ui/core";
+import Link from "next/link";
 import React from "react";
 
 interface Crumb {
@@ -15,13 +16,13 @@ const PageHeader = ({ title, crumbs }: { title: string; crumbs: Crumb[] }) => {
   const renderCrumbs = () => {
     return crumbs.map((crumb, id) => {
       return (
-        <MuiLink
-          color={id == crumbs.length - 1 ? "secondary" : "textPrimary"}
-          href={crumb.path}
-          key={id}
-        >
-          {crumb.label}
-        </MuiLink>
+        <Link href={crumb.path} passHref key={id}>
+          <MuiLink
+            color={id == crumbs.length - 1 ? "secondary" : "textPrimary"}
+          >
+            {crumb.label}
+          </MuiLink>
+        </Link>
       );
     });
   };
