@@ -62,7 +62,7 @@ const soins = () => {
           {renderGridItems()}
         </Grid>
       </Container>
-      <Container maxWidth="xl" style={{ paddingTop: "5rem" }}>
+      <Container maxWidth="xl" style={{ paddingTop: "5rem" }} id={"faq"}>
         <Title label="Vos questions" />
         {renderQuestions()}
       </Container>

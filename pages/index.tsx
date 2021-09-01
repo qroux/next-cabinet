@@ -34,13 +34,13 @@ export default function Home() {
     {
       label: "Implantologie",
       imagePath: "/logo-implant.png",
-      path: "/cabinet",
+      path: "/soins",
     },
-    { label: "Parodontologie", imagePath: "/logo-paro.png", path: "/cabinet" },
+    { label: "Parodontologie", imagePath: "/logo-paro.png", path: "/soins" },
     {
       label: "Vos Questions",
       imagePath: "/logo-question.png",
-      path: "/cabinet",
+      path: "/soins#faq",
     },
   ];
 
@@ -127,7 +127,7 @@ export default function Home() {
             display: "flex",
             width: "100%",
             justifyContent: "space-around",
-            padding: "0.5rem 0",
+            padding: "5rem 0",
           }}
         >
           {renderNavCards()}

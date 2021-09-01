@@ -47,12 +47,7 @@ const NavCard = ({
               width: "6rem",
             }}
           />
-          <CardContent
-            style={{
-              borderTop: "1px solid rgba(71,71,71, 0.1)",
-              marginTop: "1rem",
-            }}
-          >
+          <CardContent>
             <Typography
               gutterBottom
               variant="h6"
