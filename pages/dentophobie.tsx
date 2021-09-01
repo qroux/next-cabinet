@@ -47,7 +47,7 @@ const Dentophobie = () => {
         <Title label="Dentophobie" />
 
         <PageHeader
-          title="J'ai peur d'aller chez le dentiste, comment me faire soigner ?"
+          title="J’ai peur d’aller chez le dentiste, comment me faire soigner ?"
           crumbs={[
             { label: "Accueil", path: "/" },
             { label: "Soins", path: "/soins" },
@@ -68,7 +68,7 @@ const Dentophobie = () => {
             <strong>
               Un vécu traumatisant au cours de l’enfance, lors de mauvaises
               expériences, est souvent à l’origine de cette phobie.
-            </strong>
+            </strong>{" "}
             Elle se manifeste sur le fauteuil dentaire par des accélérations du
             coeur, de la transpiration mais cet état est souvent précédé
             d’insomnies la veille même du rendez vous.
@@ -81,8 +81,8 @@ const Dentophobie = () => {
             pour “Ne pas avoir mal”, le phobique ne se sent pas rassuré, et bien
             souvent pas du tout pris au sérieux face à “sa peur à lui”. Ce
             conflit non résolu et cette impasse dans le refus des soins, sont
-            extrêment dommageables, aussi bien pour l'état dentaire que l’état
-            général et psychique.
+            extrêment dommageables, aussi bien pour l’état dentaire que l’état
+            général et psychique.{" "}
             <strong>
               L’aide professionnelle prévenante et structurée peut organiser
               efficacement la sortie de cette impasse.
@@ -94,18 +94,18 @@ const Dentophobie = () => {
               Notre objectif central est d’enlever la peur du dentiste palier
               par palier pour permettre aux patients phobiques de reprendre
               contrôle et reprendre leur souffle.
-            </strong>
+            </strong>{" "}
             Construire un rapport de confiance clair est fondamental.
           </Typography>
           <Typography variant="body1">
             <br />
-            La démarche d'accompagnement est étagée grâce à l’utilisation de
+            La démarche d’accompagnement est étagée grâce à l’utilisation de
             différentes procédures comme le protoxyde d’azote, les traitements
-            tranquillisants ou sédatifs voir même dans certain cas l'anesthésie
+            tranquillisants ou sédatifs voir même dans certain cas l’anesthésie
             générale.
             <strong>
-              En fin de traitement, l'assainissement dentaire doit être atteint
-              mais, au delà, l'objectif est l’autonomie du patient pour
+              En fin de traitement, l’assainissement dentaire doit être atteint
+              mais, au delà, l’objectif est l’autonomie du patient pour
               poursuivre ses traitements en toute normalité et sans anxiété.
             </strong>
           </Typography>
