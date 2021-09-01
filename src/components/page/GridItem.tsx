@@ -40,7 +40,7 @@ const GridItem = ({
           >
             <CardMedia
               image={imagePath}
-              title={imagePath}
+              title={label}
               style={{
                 height: "15em",
                 width: "100%",
@@ -53,7 +53,7 @@ const GridItem = ({
             >
               <Typography
                 gutterBottom
-                variant="h6"
+                variant="body1"
                 align="center"
                 style={{ color: "#474747" }}
               >
