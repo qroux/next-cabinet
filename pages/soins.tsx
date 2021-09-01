@@ -16,9 +16,9 @@ import Title from "../src/components/page/Title";
 
 const soins = () => {
   const categories = [
-    { label: "Parodontologie", path: "/", imgPath: "/soins-paro.jpg" },
-    { label: "Endodontie", path: "/", imgPath: "/soins-endo.jpg" },
-    { label: "Esthétique", path: "/", imgPath: "/soins-esthétique.jpg" },
+    { label: "Parodontologie", path: "/", imgPath: "/soins-paro.webp" },
+    { label: "Endodontie", path: "/", imgPath: "/soins-endo.webp" },
+    { label: "Esthétique", path: "/", imgPath: "/soins-esthétique.webp" },
   ];
 
   const questions = [
