@@ -50,7 +50,7 @@ const Info = () => {
   return (
     <AnimatedPage>
       <Container
-        maxWidth="xl"
+        maxWidth="lg"
         style={{ paddingTop: "1rem" }}
         disableGutters={false}
       >

@@ -56,13 +56,13 @@ const soins = () => {
 
   return (
     <AnimatedPage>
-      <Container maxWidth="xl" style={{ paddingTop: "1rem" }}>
+      <Container maxWidth="lg" style={{ paddingTop: "1rem" }}>
         <Title label="Les soins" />
         <Grid container spacing={1}>
           {renderGridItems()}
         </Grid>
       </Container>
-      <Container maxWidth="xl" style={{ paddingTop: "5rem" }} id={"faq"}>
+      <Container maxWidth="lg" style={{ paddingTop: "5rem" }} id={"faq"}>
         <Title label="Vos questions" />
         {renderQuestions()}
       </Container>

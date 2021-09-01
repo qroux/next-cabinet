@@ -9,19 +9,19 @@ import Title from "../src/components/page/Title";
 const useStyles = makeStyles((theme) => ({
   paperContainer: {
     [theme.breakpoints.only("xl")]: {
-      height: "70vh",
+      height: "50rem",
     },
     [theme.breakpoints.only("lg")]: {
-      height: "70vh",
+      height: "40rem",
     },
     [theme.breakpoints.only("md")]: {
-      height: "65vh",
+      height: "35rem",
     },
     [theme.breakpoints.only("sm")]: {
-      height: "60vh",
+      height: "30rem",
     },
     [theme.breakpoints.down("xs")]: {
-      height: "40vh",
+      height: "25rem",
     },
   },
 }));
@@ -73,7 +73,7 @@ const Cabinet = () => {
 
   return (
     <AnimatedPage>
-      <Container maxWidth="xl" style={{ paddingTop: "1rem" }}>
+      <Container maxWidth="lg" style={{ paddingTop: "1rem" }}>
         <Title label="Le cabinet" />
         <Carousel animation="fade">{renderSlides()}</Carousel>
       </Container>
