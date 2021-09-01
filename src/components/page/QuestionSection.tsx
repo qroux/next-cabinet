@@ -16,7 +16,9 @@ const QuestionSection = () => {
   //   }
 
   return (
-    <Typography variant="h5">Le traitement des patients phobiques</Typography>
+    <Typography variant="h5" style={{ fontWeight: "bold" }}>
+      Le traitement des patients phobiques
+    </Typography>
   );
 };
 
