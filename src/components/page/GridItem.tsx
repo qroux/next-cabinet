@@ -53,7 +53,7 @@ const GridItem = ({
             >
               <Typography
                 gutterBottom
-                variant="body1"
+                variant="h6"
                 align="center"
                 style={{ color: "#474747" }}
               >
