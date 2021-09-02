@@ -4,6 +4,7 @@ import {
   Divider,
   makeStyles,
   Box,
+  ThemeProvider,
 } from "@material-ui/core";
 import React from "react";
 import AnimatedPage from "../src/components/page/AnimatedPage";
@@ -14,10 +15,25 @@ const useStyles = makeStyles((theme) => ({
     [theme.breakpoints.up("lg")]: {
       flexDirection: "column",
     },
-    [theme.breakpoints.down("sm")]: {
+    [theme.breakpoints.down("md")]: {
       flexDirection: "column",
       // justifyContent: "space-around",
       // alignItems: "center",
+    },
+  },
+  infoContainer: {
+    [theme.breakpoints.up("sm")]: {
+      flexDirection: "row",
+    },
+    [theme.breakpoints.down("xs")]: {
+      flexDirection: "column",
+      // justifyContent: "space-around",
+      // alignItems: "center",
+    },
+  },
+  autreContainer: {
+    [theme.breakpoints.down("xs")]: {
+      marginTop: "5rem",
     },
   },
 }));
@@ -69,7 +85,7 @@ const Info = () => {
           >
             {/* Info */}
             <div
-              className="InfoContainer"
+              className={classes.infoContainer}
               style={{
                 flex: 1,
                 padding: "1rem 0",
@@ -78,11 +94,11 @@ const Info = () => {
               }}
             >
               {/* Info */}
-              <div style={{ flex: 0.5 }}>
+              <div style={{ flex: 0.5, padding: "0 2rem" }}>
                 <Typography
                   variant="h5"
                   align="center"
-                  style={{ marginBottom: "2rem" }}
+                  style={{ marginBottom: "2rem", fontWeight: "bold" }}
                 >
                   Consultations
                 </Typography>
@@ -100,14 +116,53 @@ const Info = () => {
 
               <Divider orientation="vertical" flexItem />
 
-              {/* Horaires */}
-              <div style={{ flex: 1 }}>
+              {/* Autre */}
+              <div
+                className={classes.autreContainer}
+                style={{
+                  flex: 1,
+                  padding: "0 2rem",
+                }}
+              >
                 <Typography
-                  variant="h6"
+                  variant="h5"
                   align="center"
+                  style={{ fontWeight: "bold" }}
+                >
+                  Protocole Sanitaire
+                </Typography>
+
+                <Typography
+                  variant="body1"
+                  align="left"
                   style={{ marginTop: "4rem" }}
                 >
-                  -
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut
+                  rerum iste doloribus eveniet enim vitae vel error omnis nisi
+                  facilis repudiandae, recusandae facere, cum impedit ullam. Aut
+                  amet quam error.
+                </Typography>
+
+                <Typography
+                  variant="body1"
+                  align="left"
+                  style={{ marginTop: "4rem" }}
+                >
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut
+                  rerum iste doloribus eveniet enim vitae vel error omnis nisi
+                  facilis repudiandae, recusandae facere, cum impedit ullam. Aut
+                  amet quam error.
+                </Typography>
+
+                <Typography
+                  variant="body1"
+                  align="left"
+                  style={{ marginTop: "4rem" }}
+                >
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut
+                  rerum iste doloribus eveniet enim vitae vel error omnis nisi
+                  facilis repudiandae, recusandae facere, cum impedit ullam. Aut
+                  amet quam error.
                 </Typography>
               </div>
             </div>
