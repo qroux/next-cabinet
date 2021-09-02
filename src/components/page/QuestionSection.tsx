@@ -44,10 +44,10 @@ const QuestionSection = () => {
               se construire sans que le patient ait une confiance absolue en son
               dentiste.
             </strong>{" "}
-            Il attend bien sur un travail bien fait mais aussi d'être informé
+            Il attend bien sur un travail bien fait mais aussi d’être informé
             des étapes de ce travail avenir des moments de repos. Il attend que
             le dentiste ait l’attention voulue pour lui permettre de marcher à
-            son rythme sans s'essouffler et qu’ils soit conscient de l’anxiété
+            son rythme sans s’essouffler et qu’ils soit conscient de l’anxiété
             qu’il ressent. Dans le contexte traditionnel des cabinets dentaire
             ceci est un vrai défi pour le dentiste soumis lui même à son propre
             stress dans le rythme quotidien débordé.
@@ -77,7 +77,7 @@ const QuestionSection = () => {
             environnements dentaires. Il en va de même les éléments de
             décoration apportant des touches colorées et vivantes.
             <strong>
-              Ceci évite aux anxieux la sensation d'étouffement et augmente leur
+              Ceci évite aux anxieux la sensation d’étouffement et augmente leur
               sentiment positif de contrôle et de liberté.
             </strong>{" "}
             <br />
@@ -102,15 +102,15 @@ const QuestionSection = () => {
           <Typography variant={"body1"}>
             <strong>
               La confiance en le dentiste, la personnalisation des procédures
-              d'anesthésie et le choix technique de matériel ou de produit sont
+              d’anesthésie et le choix technique de matériel ou de produit sont
               un ensemble cohérent qui doit bénéficier aujourd’hui à tous les
-              patient et à l'évidence tout particulièrement au patients anxieux.
+              patient et à l’évidence tout particulièrement au patients anxieux.
             </strong>
           </Typography>
           <Typography variant={"body1"}>
             La crainte d’une anesthésie qui ne “marche pas” est dans ces
             conditions d’attention non cliniquement fondée. La peur des piqûres
-            chez les patients phobiques nécessite d'être réalisée avec beaucoup
+            chez les patients phobiques nécessite d’être réalisée avec beaucoup
             de précautions par des “équipes dentiste-assistante” très bien
             formées et en bonne entente.
           </Typography>
@@ -130,7 +130,7 @@ const QuestionSection = () => {
             </ListItem>
             <ListItem>
               <Typography variant="body1">
-                <strong>Utilisation d'aiguilles très fines 0.27 mm</strong>
+                <strong>Utilisation d’aiguilles très fines 0.27 mm</strong>
               </Typography>
             </ListItem>
             <ListItem>
@@ -152,11 +152,11 @@ const QuestionSection = () => {
           <Typography variant={"body1"}>
             <strong>
               Une surveillance attentive doit déterminer le moment des pauses
-              pour reprendre son souffle et écouter le retour d'information du
+              pour reprendre son souffle et écouter le retour d’information du
               patient.
             </strong>
             Celui-ci est fondamental car il assure un avancement du traitement
-            validé en permanence par l'équilibre émotionnel du patient.
+            validé en permanence par l’équilibre émotionnel du patient.
           </Typography>
 
           <Typography variant={"body1"}>
