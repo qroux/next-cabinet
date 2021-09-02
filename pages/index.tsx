@@ -36,7 +36,11 @@ export default function Home() {
       imagePath: "/logo-implant.png",
       path: "/soins",
     },
-    { label: "Parodontologie", imagePath: "/logo-paro.png", path: "/soins" },
+    {
+      label: "Parodontologie",
+      imagePath: "/logo-paro.png",
+      path: "/parodontologie",
+    },
     {
       label: "Vos Questions",
       imagePath: "/logo-question.png",
