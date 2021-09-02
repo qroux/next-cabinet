@@ -58,12 +58,28 @@ const soins = () => {
     <AnimatedPage>
       <Container maxWidth="lg" style={{ paddingTop: "1rem" }}>
         <Title label="Les soins" />
+
+        <Typography
+          variant="h5"
+          style={{ marginTop: "1rem", fontWeight: "bold" }}
+        >
+          Categories
+        </Typography>
+        <Divider style={{ marginBottom: "1rem" }} />
+
         <Grid container spacing={1}>
           {renderGridItems()}
         </Grid>
       </Container>
-      <Container maxWidth="lg" style={{ paddingTop: "5rem" }} id={"faq"}>
-        <Title label="Vos questions" />
+      <Container maxWidth="lg" style={{ paddingTop: "2rem" }} id={"faq"}>
+        <Typography
+          variant="h5"
+          style={{ marginTop: "1rem", fontWeight: "bold" }}
+        >
+          Vos questions
+        </Typography>
+        <Divider style={{ marginBottom: "1rem" }} />
+
         {renderQuestions()}
       </Container>
     </AnimatedPage>
