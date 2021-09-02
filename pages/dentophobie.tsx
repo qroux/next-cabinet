@@ -65,7 +65,7 @@ const Dentophobie = () => {
           </Typography>
 
           <Typography variant="body1">
-            <strong style={{ color: theme.palette.secondary.main }}>
+            <strong>
               Un vécu traumatisant au cours de l’enfance, lors de mauvaises
               expériences, est souvent à l’origine de cette phobie.
             </strong>{" "}
@@ -83,14 +83,14 @@ const Dentophobie = () => {
             conflit non résolu et cette impasse dans le refus des soins, sont
             extrêment dommageables, aussi bien pour l’état dentaire que l’état
             général et psychique.{" "}
-            <strong style={{ color: theme.palette.secondary.main }}>
+            <strong>
               L’aide professionnelle prévenante et structurée peut organiser
               efficacement la sortie de cette impasse.
             </strong>
           </Typography>
           <Typography variant="body1">
             <br />
-            <strong style={{ color: theme.palette.secondary.main }}>
+            <strong>
               Notre objectif central est d’enlever la peur du dentiste palier
               par palier pour permettre aux patients phobiques de reprendre
               contrôle et reprendre leur souffle.
@@ -103,7 +103,7 @@ const Dentophobie = () => {
             différentes procédures comme le protoxyde d’azote, les traitements
             tranquillisants ou sédatifs voir même dans certain cas l’anesthésie
             générale.
-            <strong style={{ color: theme.palette.secondary.main }}>
+            <strong>
               En fin de traitement, l’assainissement dentaire doit être atteint
               mais, au delà, l’objectif est l’autonomie du patient pour
               poursuivre ses traitements en toute normalité et sans anxiété.

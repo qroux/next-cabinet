@@ -64,6 +64,9 @@ export const darkTheme = (dark: boolean): ThemeOptions => {
           body: {
             transition: "all 0.3s linear",
           },
+          strong: {
+            color: paletteColors.secondary,
+          },
         },
       },
     },
