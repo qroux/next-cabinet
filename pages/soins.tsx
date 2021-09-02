@@ -21,7 +21,7 @@ const soins = () => {
       path: "/parodontologie",
       imgPath: "/card-paro.jpg",
     },
-    { label: "Endodontie", path: "/", imgPath: "/card-endo.jpg" },
+    { label: "Endodontie", path: "/endodontie", imgPath: "/card-endo.jpg" },
     { label: "Esthétique", path: "/", imgPath: "/card-esthetique.jpg" },
   ];
 
