@@ -16,7 +16,11 @@ import Title from "../src/components/page/Title";
 
 const soins = () => {
   const categories = [
-    { label: "Parodontologie", path: "/", imgPath: "/card-paro.jpg" },
+    {
+      label: "Parodontologie",
+      path: "/parodontologie",
+      imgPath: "/card-paro.jpg",
+    },
     { label: "Endodontie", path: "/", imgPath: "/card-endo.jpg" },
     { label: "Esthétique", path: "/", imgPath: "/card-esthetique.jpg" },
   ];
