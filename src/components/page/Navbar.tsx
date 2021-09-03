@@ -88,12 +88,14 @@ export default function Navbar() {
       <Toolbar variant="regular">
         <Link href="/" passHref>
           <Button color="inherit">
+            {/* eslint-disable */}
             <img
               src="/android-chrome-512x512.png"
               width="40rem"
               height="40rem"
               alt="logo"
             />
+            {/* eslint-enable  */}
           </Button>
         </Link>
         <div className={classes.buttons} style={{ paddingLeft: "2rem" }}>
