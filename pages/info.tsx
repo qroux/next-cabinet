@@ -53,10 +53,14 @@ const Info = () => {
     return opennings.map((openning, id) => {
       return (
         <div style={{ marginBottom: "1rem" }} key={id}>
-          <Typography variant="h6" align="center">
+          <Typography
+            variant="body1"
+            align="center"
+            style={{ fontWeight: "bold" }}
+          >
             {openning.day}
           </Typography>
-          <Typography variant="body1" align="center">
+          <Typography variant="body1" align="left">
             Matin: {openning.morning} | Après-midi: {openning.evening}
           </Typography>
         </div>
@@ -139,41 +143,42 @@ const Info = () => {
                   align="center"
                   style={{ fontWeight: "bold" }}
                 >
-                  Protocole Sanitaire
+                  Informations
                 </Typography>
 
-                <Typography
-                  variant="body1"
-                  align="left"
-                  style={{ marginTop: "4rem" }}
-                >
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut
-                  rerum iste doloribus eveniet enim vitae vel error omnis nisi
-                  facilis repudiandae, recusandae facere, cum impedit ullam. Aut
-                  amet quam error.
-                </Typography>
+                <div style={{ marginTop: "2rem" }}>
+                  <Typography
+                    variant="body1"
+                    style={{ fontWeight: "bold", marginBottom: "1rem" }}
+                  >
+                    Contacts
+                  </Typography>
 
-                <Typography
-                  variant="body1"
-                  align="left"
-                  style={{ marginTop: "4rem" }}
-                >
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut
-                  rerum iste doloribus eveniet enim vitae vel error omnis nisi
-                  facilis repudiandae, recusandae facere, cum impedit ullam. Aut
-                  amet quam error.
-                </Typography>
+                  <Typography variant="body1" align="left">
+                    Adresse: 9 rue Francis Davso, 13001 Marseille
+                  </Typography>
 
-                <Typography
-                  variant="body1"
-                  align="left"
-                  style={{ marginTop: "4rem" }}
-                >
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut
-                  rerum iste doloribus eveniet enim vitae vel error omnis nisi
-                  facilis repudiandae, recusandae facere, cum impedit ullam. Aut
-                  amet quam error.
-                </Typography>
+                  <Typography variant="body1" align="left">
+                    Téléphone: 04 91 33 32 05
+                  </Typography>
+
+                  <Typography variant="body1" align="left">
+                    email: roux.gilbert0638@orange.fr
+                  </Typography>
+                </div>
+
+                <div style={{ marginTop: "2rem" }}>
+                  <Typography
+                    variant="body1"
+                    style={{ fontWeight: "bold", marginBottom: "1rem" }}
+                  >
+                    Protocole Sanitaire
+                  </Typography>
+
+                  <Typography variant="body1" align="left">
+                    -
+                  </Typography>
+                </div>
               </div>
             </div>
 

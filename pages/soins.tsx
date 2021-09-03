@@ -22,7 +22,7 @@ const soins = () => {
       imgPath: "/card-paro.jpg",
     },
     { label: "Endodontie", path: "/endodontie", imgPath: "/card-endo.jpg" },
-    { label: "Esthétique", path: "/", imgPath: "/card-esthetique.jpg" },
+    { label: "Esthétique", path: "/soins", imgPath: "/card-esthetique.jpg" },
   ];
 
   const questions = [

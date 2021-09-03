@@ -32,14 +32,14 @@ const useStyles = makeStyles((theme) => ({
 export default function Home() {
   const cards = [
     {
-      label: "Implantologie",
-      imagePath: "/logo-implant.png",
-      path: "/soins",
-    },
-    {
       label: "Parodontologie",
       imagePath: "/logo-paro.png",
       path: "/parodontologie",
+    },
+    {
+      label: "Implantologie",
+      imagePath: "/logo-implant.png",
+      path: "/soins",
     },
     {
       label: "Vos Questions",
