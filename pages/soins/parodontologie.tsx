@@ -2,14 +2,14 @@ import React from "react";
 import { Container, List, Typography } from "@material-ui/core";
 import Head from "next/head";
 
-import AnimatedPage from "../src/components/page/AnimatedPage";
-import Title from "../src/components/page/Title";
-import PageHeader from "../src/components/page/PageHeader";
-import MainSection from "../src/components/page/MainSection";
-import QuestionSectionHeader from "../src/components/page/QuestionSectionHeader";
-import QuestionAccordion from "../src/components/page/QuestionAccordion";
-import PhotoSection from "../src/components/page/PhotoSection";
-import QuestionSection from "../src/components/page/QuestionSection";
+import AnimatedPage from "../../src/components/page/AnimatedPage";
+import Title from "../../src/components/page/Title";
+import PageHeader from "../../src/components/page/PageHeader";
+import MainSection from "../../src/components/page/MainSection";
+import QuestionSectionHeader from "../../src/components/page/QuestionSectionHeader";
+import QuestionAccordion from "../../src/components/page/QuestionAccordion";
+import PhotoSection from "../../src/components/page/PhotoSection";
+import QuestionSection from "../../src/components/page/QuestionSection";
 
 const Parodontologie = () => {
   return (

@@ -34,7 +34,7 @@ export default function Home() {
     {
       label: "Parodontologie",
       imagePath: "/logo-paro.png",
-      path: "/parodontologie",
+      path: "/soins/parodontologie",
     },
     {
       label: "Implantologie",
@@ -131,7 +131,7 @@ export default function Home() {
             display: "flex",
             width: "100%",
             justifyContent: "space-around",
-            padding: "5rem 0",
+            padding: "2rem 0",
           }}
         >
           {renderNavCards()}

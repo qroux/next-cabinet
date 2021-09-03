@@ -2,12 +2,12 @@ import React from "react";
 import { Container, List, ListItem, Typography } from "@material-ui/core";
 import Head from "next/head";
 
-import AnimatedPage from "../src/components/page/AnimatedPage";
-import Title from "../src/components/page/Title";
-import PageHeader from "../src/components/page/PageHeader";
-import MainSection from "../src/components/page/MainSection";
-import QuestionSectionHeader from "../src/components/page/QuestionSectionHeader";
-import QuestionAccordion from "../src/components/page/QuestionAccordion";
+import AnimatedPage from "../../src/components/page/AnimatedPage";
+import Title from "../../src/components/page/Title";
+import PageHeader from "../../src/components/page/PageHeader";
+import MainSection from "../../src/components/page/MainSection";
+import QuestionSectionHeader from "../../src/components/page/QuestionSectionHeader";
+import QuestionAccordion from "../../src/components/page/QuestionAccordion";
 
 const Dentophobie = () => {
   return (

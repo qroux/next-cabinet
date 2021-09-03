@@ -18,17 +18,21 @@ const soins = () => {
   const categories = [
     {
       label: "Parodontologie",
-      path: "/parodontologie",
+      path: "/soins/parodontologie",
       imgPath: "/card-paro.jpg",
     },
-    { label: "Endodontie", path: "/endodontie", imgPath: "/card-endo.jpg" },
+    {
+      label: "Endodontie",
+      path: "/soins/endodontie",
+      imgPath: "/card-endo.jpg",
+    },
     { label: "Esthétique", path: "/soins", imgPath: "/card-esthetique.jpg" },
   ];
 
   const questions = [
     {
       label: "J'ai peur d'aller chez le dentiste, comment me faire soigner ?",
-      path: "/dentophobie",
+      path: "/soins/dentophobie",
     },
   ];
 
