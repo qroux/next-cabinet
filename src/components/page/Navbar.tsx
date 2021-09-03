@@ -1,5 +1,4 @@
 import Link from "next/link";
-import Image from "next/image";
 import { useRouter } from "next/router";
 import {
   AppBar,
@@ -89,7 +88,7 @@ export default function Navbar() {
       <Toolbar variant="regular">
         <Link href="/" passHref>
           <Button color="inherit">
-            <Image
+            <img
               src="/android-chrome-512x512.png"
               width="40rem"
               height="40rem"
