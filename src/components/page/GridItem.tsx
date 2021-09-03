@@ -1,3 +1,4 @@
+import React from "react";
 import {
   CardActionArea,
   CardContent,
@@ -6,10 +7,20 @@ import {
   CardMedia,
   Divider,
   Grid,
+  makeStyles,
 } from "@material-ui/core";
 import Link from "next/link";
 
-import React from "react";
+const useStyles = makeStyles((theme) => ({
+  cardImg: {
+    [theme.breakpoints.up("md")]: {
+      height: "10rem",
+    },
+    [theme.breakpoints.down("sm")]: {
+      height: "7rem",
+    },
+  },
+}));
 
 const GridItem = ({
   imagePath,
@@ -20,6 +31,8 @@ const GridItem = ({
   label: string;
   path: string;
 }) => {
+  const classes = useStyles();
+
   return (
     <Link href={path} passHref>
       <Grid item xs={6} sm={4} md={3}>
@@ -41,16 +54,12 @@ const GridItem = ({
             <CardMedia
               image={imagePath}
               title={label}
+              className={classes.cardImg}
               style={{
-                height: "15em",
                 width: "100%",
               }}
             />
-            <CardContent
-              style={{
-                borderTop: "1px solid rgba(71,71,71, 0.1)",
-              }}
-            >
+            <CardContent>
               <Typography
                 gutterBottom
                 variant="h6"
