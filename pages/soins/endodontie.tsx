@@ -277,7 +277,17 @@ const Endodontie = () => {
         </QuestionSection>
 
         {/* PHOTO */}
-        <PhotoSection />
+        <PhotoSection
+          imgPath={"/card-endo.jpg"}
+          galleryPaths={[
+            "/endo/endo1.png",
+            "/endo/endo1-1.png",
+            "/endo/endo1-2.png",
+            "/endo/endo2-1.png",
+            "/endo/endo2-2.png",
+            "/endo/endo2-3.png",
+          ]}
+        />
       </Container>
     </AnimatedPage>
   );

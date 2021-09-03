@@ -40,7 +40,7 @@ const Parodontologie = () => {
         <MainSection>
           <Typography variant="body1">
             Le déchaussement des dents porte le nom médical de maladies
-            parodontales.
+            parodontales.{" "}
             <strong>
               Ce sont une série de maladies qui se caractérisent par la
               destruction, plus ou moins sévère, plus ou moins rapide, du
@@ -167,7 +167,14 @@ const Parodontologie = () => {
         </QuestionSection>
 
         {/* PHOTO */}
-        <PhotoSection />
+        <PhotoSection
+          imgPath={"/paro/paro-min2.png"}
+          galleryPaths={[
+            "/paro/paro1.png",
+            "/paro/paro2.png",
+            "/paro/paro3.png",
+          ]}
+        />
       </Container>
     </AnimatedPage>
   );

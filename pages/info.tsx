@@ -122,7 +122,7 @@ const Info = () => {
                 <Typography
                   variant="h6"
                   align="center"
-                  style={{ marginTop: "4rem" }}
+                  style={{ marginTop: "2rem", fontWeight: "bold" }}
                 >
                   Nos consultations sont exclusivement sur rendez-vous
                 </Typography>

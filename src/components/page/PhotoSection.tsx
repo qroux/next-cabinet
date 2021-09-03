@@ -1,8 +1,22 @@
 import React, { useState } from "react";
-import { Typography } from "@material-ui/core";
+import {
+  Card,
+  CardActionArea,
+  CardContent,
+  CardMedia,
+  Grid,
+  Typography,
+} from "@material-ui/core";
 import FsLightbox from "fslightbox-react";
+import GalleryButton from "./GalleryButton";
 
-const PhotoSection = () => {
+const PhotoSection = ({
+  imgPath,
+  galleryPaths,
+}: {
+  imgPath: string;
+  galleryPaths: string[];
+}) => {
   const [toggler, setToggler] = useState(false);
 
   return (
@@ -15,15 +29,11 @@ const PhotoSection = () => {
       </Typography>
 
       <div>
-        <button onClick={() => setToggler(!toggler)}>Toggle Lightbox</button>
-        <FsLightbox
-          toggler={toggler}
-          sources={[
-            "https://i.imgur.com/fsyrScY.jpg",
-            "https://www.youtube.com/watch?v=xshEZzpS4CQ",
-            "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4",
-          ]}
-        />
+        <div onClick={() => setToggler(!toggler)}>
+          <GalleryButton imgPath={imgPath} />
+        </div>
+
+        <FsLightbox toggler={toggler} sources={galleryPaths} />
       </div>
     </>
   );
