@@ -21,7 +21,7 @@ const GridItem = ({
   path: string;
 }) => {
   return (
-    <Link href={path}>
+    <Link href={path} passHref>
       <Grid item xs={6} sm={4} md={3}>
         <Card
           style={{

@@ -93,6 +93,7 @@ export default function Navbar() {
               src="/android-chrome-512x512.png"
               width="40rem"
               height="40rem"
+              alt="logo"
             />
           </Button>
         </Link>

@@ -20,7 +20,7 @@ const NavCard = ({
   path: string;
 }) => {
   return (
-    <Link href={path}>
+    <Link href={path} passHref>
       <Card
         style={{
           width: "18rem",
