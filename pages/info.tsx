@@ -6,6 +6,7 @@ import {
   Box,
   ThemeProvider,
 } from "@material-ui/core";
+import Head from "next/head";
 import React from "react";
 import AnimatedPage from "../src/components/page/AnimatedPage";
 import Title from "../src/components/page/Title";
@@ -65,6 +66,15 @@ const Info = () => {
 
   return (
     <AnimatedPage>
+      <Head>
+        <title>Docteur Gilbert Roux - Informations pratiques</title>
+        <meta
+          name="description"
+          content="Cabinet dentaire du Docteur Gilbert Roux. Adresse: 9 Rue Francis Davso, 13001 Marseille. Spécialisé en Implantologie et Parodontologie"
+        />
+        <link rel="icon" href="/favicon.ico" />
+      </Head>
+
       <Container
         maxWidth="lg"
         style={{ paddingTop: "1rem" }}

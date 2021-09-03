@@ -1,5 +1,6 @@
 import React from "react";
 import { Container, List, Typography } from "@material-ui/core";
+import Head from "next/head";
 
 import AnimatedPage from "../src/components/page/AnimatedPage";
 import Title from "../src/components/page/Title";
@@ -13,6 +14,15 @@ import QuestionSection from "../src/components/page/QuestionSection";
 const Endodontie = () => {
   return (
     <AnimatedPage>
+      <Head>
+        <title>Docteur Gilbert Roux - Endodontie</title>
+        <meta
+          name="description"
+          content="Endodontie - Le traitement des racines, pourquoi et comment ?"
+        />
+        <link rel="icon" href="/favicon.ico" />
+      </Head>
+
       <Container maxWidth="lg" style={{ paddingTop: "1rem" }}>
         <Title label="Endodontie" />
 

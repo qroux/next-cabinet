@@ -1,15 +1,15 @@
+import React from "react";
 import {
   Container,
   Typography,
   Divider,
   Grid,
-  Paper,
-  Link as MuiLink,
   Button,
 } from "@material-ui/core";
 import Chevron from "@material-ui/icons/ChevronRightRounded";
 import Link from "next/link";
-import React from "react";
+import Head from "next/head";
+
 import AnimatedPage from "../src/components/page/AnimatedPage";
 import GridItem from "../src/components/page/GridItem";
 import Title from "../src/components/page/Title";
@@ -60,6 +60,15 @@ const soins = () => {
 
   return (
     <AnimatedPage>
+      <Head>
+        <title>Docteur Gilbert Roux - Les soins</title>
+        <meta
+          name="description"
+          content="Cabinet dentaire du Docteur Gilbert Roux. Adresse: 9 Rue Francis Davso, 13001 Marseille. Spécialisé en Implantologie et Parodontologie"
+        />
+        <link rel="icon" href="/favicon.ico" />
+      </Head>
+
       <Container maxWidth="lg" style={{ paddingTop: "1rem" }}>
         <Title label="Les soins" />
 

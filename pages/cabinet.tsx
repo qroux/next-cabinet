@@ -1,9 +1,10 @@
-import { Container, Typography, Divider, makeStyles } from "@material-ui/core";
 import React from "react";
-import AnimatedPage from "../src/components/page/AnimatedPage";
-import Carousel from "react-material-ui-carousel";
-import { Paper, Button } from "@material-ui/core";
+import Head from "next/head";
+import { Container, Typography, makeStyles, Paper } from "@material-ui/core";
 import { useTheme } from "@material-ui/core/styles";
+import Carousel from "react-material-ui-carousel";
+
+import AnimatedPage from "../src/components/page/AnimatedPage";
 import Title from "../src/components/page/Title";
 
 const useStyles = makeStyles((theme) => ({
@@ -73,6 +74,15 @@ const Cabinet = () => {
 
   return (
     <AnimatedPage>
+      <Head>
+        <title>Docteur Gilbert Roux - Cabinet</title>
+        <meta
+          name="description"
+          content="Présentation du cabinet dentaire - 9 rue francis Davso, 13001 Marseille"
+        />
+        <link rel="icon" href="/favicon.ico" />
+      </Head>
+
       <Container maxWidth="lg" style={{ paddingTop: "1rem" }}>
         <Title label="Le cabinet" />
         <Carousel animation="fade">{renderSlides()}</Carousel>

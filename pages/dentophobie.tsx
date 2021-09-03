@@ -1,5 +1,6 @@
 import React from "react";
 import { Container, List, ListItem, Typography } from "@material-ui/core";
+import Head from "next/head";
 
 import AnimatedPage from "../src/components/page/AnimatedPage";
 import Title from "../src/components/page/Title";
@@ -11,6 +12,15 @@ import QuestionAccordion from "../src/components/page/QuestionAccordion";
 const Dentophobie = () => {
   return (
     <AnimatedPage>
+      <Head>
+        <title>Docteur Gilbert Roux - Dentophobie</title>
+        <meta
+          name="description"
+          content="Dentophobie - J’ai peur d’aller chez le dentiste, comment me faire soigner ?"
+        />
+        <link rel="icon" href="/favicon.ico" />
+      </Head>
+
       <Container maxWidth="lg" style={{ paddingTop: "1rem" }}>
         <Title label="Dentophobie" />
 
