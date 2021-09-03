@@ -21,7 +21,7 @@ export const paletteColorsLight = {
   secondary: "#18a18a",
   // secondary: "#ffbf99",
   error: "#E44C65",
-  background: "#ededed",
+  background: "#f2f2f2",
   textPrimary: "#474747",
   textSecondary: "#18a18a",
   // paper: "#e6e6e6",

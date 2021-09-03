@@ -14,7 +14,10 @@ const Footer = () => {
   const renderItems = () => {
     return items.map((item, id) => {
       return (
-        <div style={{ display: "flex", alignItems: "center" }} key={id}>
+        <div
+          style={{ display: "flex", alignItems: "center", padding: "0.2rem 0" }}
+          key={id}
+        >
           {item.icon}
           <Typography variant="body1" style={{ marginLeft: "1rem" }}>
             {item.content}
