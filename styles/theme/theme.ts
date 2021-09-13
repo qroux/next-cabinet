@@ -39,6 +39,9 @@ export const darkTheme = (dark: boolean): ThemeOptions => {
       h5: {
         fontFamily: "Montserrat",
       },
+      body1: {
+        fontSize: 18,
+      },
     },
     palette: {
       type: dark ? "dark" : "light",
