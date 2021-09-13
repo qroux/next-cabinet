@@ -14,15 +14,12 @@ export default class MyDocument extends Document {
         <Head>
           <meta name="theme-color" content={theme.palette.primary.main} />
           <link rel="shortcut icon" href="/android-chrome-512x512.png" />
-          {/* <link
-            rel="stylesheet"
-            href="https://fonts.googleapis.com/css?family=Roboto+Slab:300,400,500,700&display=swap"
-          /> */}
+          <link rel="preconnect" href="https://fonts.gstatic.com" />
+
           <link
-            href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap"
+            href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto:wght@400;700&family=Urbanist:wght@400;700&display=swap"
             rel="stylesheet"
           />
-
           {/* Global Site Tag (gtag.js) - Google Analytics */}
           <script
             async

@@ -32,7 +32,13 @@ export const darkTheme = (dark: boolean): ThemeOptions => {
 
   return createMuiTheme({
     typography: {
-      fontFamily: ["Montserrat"].join(","),
+      fontFamily: ["Urbanist", "Montserrat"].join(","),
+      h4: {
+        fontFamily: "Montserrat",
+      },
+      h5: {
+        fontFamily: "Montserrat",
+      },
     },
     palette: {
       type: dark ? "dark" : "light",

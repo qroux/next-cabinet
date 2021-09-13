@@ -64,7 +64,7 @@ export default function Navbar() {
       return (
         <Link href={button.path} passHref key={id}>
           <Button style={{ padding: "0 1rem", height: "3rem" }}>
-            <Typography variant="body1" color="textPrimary">
+            <Typography variant="body2" color="textPrimary">
               {button.label}
             </Typography>
           </Button>
