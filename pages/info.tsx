@@ -155,15 +155,16 @@ const Info = () => {
                   </Typography>
 
                   <Typography variant="body1" align="left">
-                    Adresse: 9 rue Francis Davso, 13001 Marseille
+                    <strong>Adresse :</strong> 9 rue Francis Davso, 13001
+                    Marseille
                   </Typography>
 
                   <Typography variant="body1" align="left">
-                    Téléphone: 04 91 33 32 05
+                    <strong>Téléphone :</strong> 04 91 33 32 05
                   </Typography>
 
                   <Typography variant="body1" align="left">
-                    email: roux.gilbert0638@orange.fr
+                    <strong>Email :</strong> roux.gilbert0638@orange.fr
                   </Typography>
                 </div>
 

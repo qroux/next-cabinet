@@ -6,15 +6,18 @@ const Title = ({ label }: { label: string }) => {
 
   return (
     <Typography
-      variant="h5"
+      variant="h3"
+      color="textPrimary"
       align="center"
       style={{
-        backgroundColor: theme.palette.secondary.main,
-        padding: "0.5rem 0",
+        // backgroundColor: theme.palette.secondary.main,
+        // border: `1px solid ${theme.palette.secondary.main}`,
+        padding: "2rem 0",
         // @ts-ignore
-        color: theme.palette.text.light,
+        // color: theme.palette.text.light,
         marginBottom: "0.5rem",
         borderRadius: "3px",
+        // fontWeight: "bold",
       }}
     >
       {label}
