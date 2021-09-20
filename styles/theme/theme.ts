@@ -1,29 +1,29 @@
-import { createMuiTheme, ThemeOptions } from "@material-ui/core/styles";
+import { createMuiTheme, ThemeOptions } from '@material-ui/core/styles';
 
 export const paletteColorsNeutral = {
-  dark: "#474747",
-  light: "#F8F3F2",
+  dark: '#474747',
+  light: '#F8F3F2',
 };
 
 export const paletteColorsDark = {
-  primary: "#003952",
-  secondary: "#18a18a",
+  primary: '#003952',
+  secondary: '#18a18a',
   // secondary: "#01638D",
-  error: "#FB9F89",
-  background: "#1b262c",
-  textPrimary: "#F8F3F2",
-  textSecondary: "#18a18a",
+  error: '#FB9F89',
+  background: '#1b262c',
+  textPrimary: '#F8F3F2',
+  textSecondary: '#18a18a',
   // paper: "#f5f5f5",
 };
 
 export const paletteColorsLight = {
-  primary: "#6886c5",
-  secondary: "#18a18a",
+  primary: '#6886c5',
+  secondary: '#18a18a',
   // secondary: "#ffbf99",
-  error: "#E44C65",
-  background: "#f2f2f2",
-  textPrimary: "#474747",
-  textSecondary: "#18a18a",
+  error: '#E44C65',
+  background: '#f2f2f2',
+  textPrimary: '#474747',
+  textSecondary: '#18a18a',
   // paper: "#e6e6e6",
 };
 
@@ -32,19 +32,16 @@ export const darkTheme = (dark: boolean): ThemeOptions => {
 
   return createMuiTheme({
     typography: {
-      fontFamily: ["Urbanist", "Montserrat"].join(","),
+      fontFamily: ['Urbanist', 'Montserrat'].join(','),
       h4: {
-        fontFamily: "Montserrat",
+        fontFamily: 'Montserrat',
       },
       h5: {
-        fontFamily: "Montserrat",
-      },
-      body1: {
-        fontSize: 18,
+        fontFamily: 'Montserrat',
       },
     },
     palette: {
-      type: dark ? "dark" : "light",
+      type: dark ? 'dark' : 'light',
 
       primary: {
         main: paletteColors.primary,
@@ -69,9 +66,9 @@ export const darkTheme = (dark: boolean): ThemeOptions => {
     },
     overrides: {
       MuiCssBaseline: {
-        "@global": {
+        '@global': {
           body: {
-            transition: "all 0.3s linear",
+            transition: 'all 0.3s linear',
           },
           strong: {
             color: paletteColors.secondary,
