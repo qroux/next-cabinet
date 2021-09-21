@@ -12,7 +12,7 @@ const Title = ({ label }: { label: string }) => {
       style={{
         // backgroundColor: theme.palette.secondary.main,
         // border: `1px solid ${theme.palette.secondary.main}`,
-        paddingBottom: '2rem',
+        padding: '1rem 0',
         // @ts-ignore
         // color: theme.palette.text.light,
         marginBottom: '0.5rem',
