@@ -5,10 +5,10 @@ import {
   Card,
   CardMedia,
   Divider,
-} from "@material-ui/core";
-import Link from "next/link";
+} from '@material-ui/core';
+import Link from 'next/link';
 
-import React from "react";
+import React from 'react';
 
 const NavCard = ({
   imagePath,
@@ -23,37 +23,34 @@ const NavCard = ({
     <Link href={path} passHref>
       <Card
         style={{
-          width: "18rem",
-          backgroundColor: "white",
-          margin: "0.5rem 0",
+          width: '15rem',
+          backgroundColor: 'white',
+          margin: '1rem 0',
         }}
         elevation={3}
-        square={false}
-      >
+        square={false}>
         <CardActionArea
           style={{
-            display: "flex",
-            justifyContent: "center",
-            alignItems: "center",
-            flexDirection: "column",
-            paddingTop: "2rem",
-          }}
-        >
+            display: 'flex',
+            justifyContent: 'center',
+            alignItems: 'center',
+            flexDirection: 'column',
+            paddingTop: '2rem',
+          }}>
           <CardMedia
             image={imagePath}
             title={imagePath}
             style={{
-              height: "6rem",
-              width: "6rem",
+              height: '4rem',
+              width: '4rem',
             }}
           />
           <CardContent>
             <Typography
               gutterBottom
-              variant="h6"
-              align="center"
-              style={{ color: "#474747" }}
-            >
+              variant='h6'
+              align='center'
+              style={{ color: '#474747' }}>
               {label}
             </Typography>
           </CardContent>

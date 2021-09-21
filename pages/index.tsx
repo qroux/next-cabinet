@@ -1,5 +1,5 @@
-import Head from "next/head";
-import AnimatedPage from "../src/components/page/AnimatedPage";
+import Head from 'next/head';
+import AnimatedPage from '../src/components/page/AnimatedPage';
 import {
   Container,
   Typography,
@@ -12,19 +12,19 @@ import {
   CardActions,
   Button,
   makeStyles,
-} from "@material-ui/core";
-import React from "react";
-import NavCard from "../src/components/page/NavCard";
+} from '@material-ui/core';
+import React from 'react';
+import NavCard from '../src/components/page/NavCard';
 
 const useStyles = makeStyles((theme) => ({
   navContainer: {
-    [theme.breakpoints.up("md")]: {
-      flexDirection: "row",
+    [theme.breakpoints.up('md')]: {
+      flexDirection: 'row',
     },
-    [theme.breakpoints.down("sm")]: {
-      flexDirection: "column",
-      justifyContent: "space-around",
-      alignItems: "center",
+    [theme.breakpoints.down('sm')]: {
+      flexDirection: 'column',
+      justifyContent: 'space-around',
+      alignItems: 'center',
     },
   },
 }));
@@ -32,19 +32,19 @@ const useStyles = makeStyles((theme) => ({
 export default function Home() {
   const cards = [
     {
-      label: "Parodontologie",
-      imagePath: "/logo-paro.png",
-      path: "/soins/parodontologie",
+      label: 'Parodontologie',
+      imagePath: '/logo-paro.png',
+      path: '/soins/parodontologie',
     },
     {
-      label: "Implantologie",
-      imagePath: "/logo-implant.png",
-      path: "/soins",
+      label: 'Implantologie',
+      imagePath: '/logo-implant.png',
+      path: '/soins',
     },
     {
-      label: "Vos Questions",
-      imagePath: "/logo-question.png",
-      path: "/soins#faq",
+      label: 'Vos Questions',
+      imagePath: '/logo-question.png',
+      path: '/soins#faq',
     },
   ];
 
@@ -67,19 +67,18 @@ export default function Home() {
     <AnimatedPage>
       <div
         style={{
-          display: "flex",
-          alignItems: "center",
-          minHeight: "80vh",
-          flexDirection: "column",
-        }}
-      >
+          display: 'flex',
+          alignItems: 'center',
+          minHeight: '80vh',
+          flexDirection: 'column',
+        }}>
         <Head>
           <title>Docteur Gilbert Roux</title>
           <meta
-            name="description"
-            content="Cabinet dentaire du Docteur Gilbert Roux. Adresse: 9 Rue Francis Davso, 13001 Marseille. Spécialisé en Implantologie et Parodontologie"
+            name='description'
+            content='Cabinet dentaire du Docteur Gilbert Roux. Adresse: 9 Rue Francis Davso, 13001 Marseille. Spécialisé en Implantologie et Parodontologie'
           />
-          <link rel="icon" href="/favicon.ico" />
+          <link rel='icon' href='/favicon.ico' />
         </Head>
 
         {/* Banner */}
@@ -87,36 +86,34 @@ export default function Home() {
           maxWidth={false}
           style={{
             backgroundImage:
-              "linear-gradient(rgba(0,0,0,0),rgba(0,0,0,0.6)), url(/accueil.jpg)",
-            backgroundSize: "cover",
-            backgroundRepeat: "no-repeat",
+              'linear-gradient(rgba(0,0,0,0),rgba(0,0,0,0.6)), url(/accueil.jpg)',
+            backgroundSize: 'cover',
+            backgroundRepeat: 'no-repeat',
 
-            backgroundPosition: "50% 10%",
-            height: "50vh",
-            display: "flex",
-            alignItems: "center",
-          }}
-        >
+            backgroundPosition: '50% 10%',
+            height: '50vh',
+            display: 'flex',
+            alignItems: 'center',
+          }}>
           {/* Banner Content */}
           <Container
-            maxWidth="xl"
+            maxWidth='xl'
             style={{
-              border: "1px solid transparent",
+              border: '1px solid transparent',
               flex: 1,
-              textAlign: "center",
-              display: "flex",
-              justifyContent: "center",
-            }}
-          >
+              textAlign: 'center',
+              display: 'flex',
+              justifyContent: 'center',
+            }}>
             <Box>
-              <Typography variant="h4" style={{ color: "white" }}>
+              <Typography variant='h4' style={{ color: 'white' }}>
                 Docteur Gilbert Roux
               </Typography>
-              <Divider variant="fullWidth" style={{ marginBottom: "1rem" }} />
-              <Typography variant="h6" style={{ color: "white" }}>
+              <Divider variant='fullWidth' style={{ marginBottom: '1rem' }} />
+              <Typography variant='h6' style={{ color: 'white' }}>
                 Chirurgien Dentiste
               </Typography>
-              <Typography variant="h6" style={{ color: "white" }}>
+              <Typography variant='h6' style={{ color: 'white' }}>
                 Spécialisé en Implantologie et Parodontologie
               </Typography>
             </Box>
@@ -126,14 +123,13 @@ export default function Home() {
         {/* Navigation cards */}
         <Container
           className={classes.navContainer}
-          maxWidth={"lg"}
+          maxWidth={'lg'}
           style={{
-            display: "flex",
-            width: "100%",
-            justifyContent: "space-around",
-            padding: "2rem 0",
-          }}
-        >
+            display: 'flex',
+            width: '100%',
+            justifyContent: 'space-evenly',
+            padding: '2rem 0',
+          }}>
           {renderNavCards()}
         </Container>
       </div>
